@@ -7,7 +7,7 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import StatsIllustrationSrc from "images/stats-illustration.svg";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 
-const Container = tw.div`relative`;
+const Container = tw.div`relative bg-changed-400`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto relative`;
@@ -31,7 +31,7 @@ const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:t
 const Statistics = tw.div`flex flex-col items-center sm:block text-center md:text-left mt-4`;
 const Statistic = tw.div`text-left sm:inline-block sm:mr-12 last:mr-0 mt-4`;
 const Value = tw.div`font-bold text-lg sm:text-xl lg:text-2xl text-secondary-500 tracking-wide`;
-const Key = tw.div`font-medium text-primary-700`;
+const Key = tw.div`font-medium text-changed-100`;
 
 const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
 
@@ -44,7 +44,7 @@ export default ({
   heading = (
     <>
       Carbon Measurement 
- <wbr /> <div><span tw="text-primary-500 text-lg">Clear and Simple Solution for Emissions Transparency</span></div>
+ <wbr /> <div><span tw="text-changed-100 text-lg">Clear and Simple Solution for Emissions Transparency</span></div>
     </>
   ),
   description = "A simple and user-friendly software that allows organizations to control their carbon emissions intelligently. Software-as-a-service solution to manage carbon emissions, allowing its customers to analyze and evaluate their emissions data.",
@@ -84,7 +84,7 @@ export default ({
     <Container>
       <TwoColumn css={!imageInsideDiv && tw`md:items-center`}>
         <ImageColumn css={imageContainerCss}>
-          {imageInsideDiv ? <Image imageSrc={imageSrc} css={imageCss} /> : <img src={imageSrc} css={imageCss} alt="" />}
+          {imageInsideDiv ? <Image imageSrc="https://img.freepik.com/free-vector/save-planet-concept_23-2148540641.jpg?w=740&t=st=1653536712~exp=1653537312~hmac=1a64a4fa45beeeb5c687369e25483e59af6f931b6ea23cb8bf6be10cc7156b2a" css={imageCss} /> : <img src="https://img.freepik.com/free-vector/save-planet-concept_23-2148540641.jpg?w=740&t=st=1653536712~exp=1653537312~hmac=1a64a4fa45beeeb5c687369e25483e59af6f931b6ea23cb8bf6be10cc7156b2a" css={imageCss} alt="" />}
           {imageDecoratorBlob && <DecoratorBlob css={imageDecoratorBlobCss} />}
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>

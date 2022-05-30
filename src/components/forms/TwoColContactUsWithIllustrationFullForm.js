@@ -26,7 +26,7 @@ const Heading = tw(SectionHeading)`mt-4 font-black text-left text-3xl sm:text-4x
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`
 
 const Form = tw.form`mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0`
-const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-medium transition duration-300 hocus:border-primary-500`
+const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-medium transition duration-300 hocus:border-changed-100`
 const Textarea = styled(Input).attrs({as: "textarea"})`
   ${tw`h-24`}
 `
@@ -35,7 +35,7 @@ const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`
 
 export default ({
   subheading = "Contact Us",
-  heading = <>Feel free to <span tw="text-primary-500">get in touch</span><wbr/> with us.</>,
+  heading = <>Fill the form to <span tw="text-changed-100">book a demo</span><wbr/> with us.</>,
   description = "Thank you for your interest in ZeroCarbon.To Contact us, Please complete the form below. You will receive an automated response confirming that we have received your message, we will make every effort to respond you within one business day.",
   submitButtonText = "Send",
   formAction = "#",
@@ -48,7 +48,7 @@ export default ({
     <Container>
       <TwoColumn>
         <ImageColumn>
-          <Image imageSrc={EmailIllustrationSrc} />
+          <Image imageSrc="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?t=st=1653537089~exp=1653537689~hmac=5ce7076da3d4c90b62fa56194cc2e64b4d385e5a964ea25edfcf704e27ea5da2&w=740" />
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>

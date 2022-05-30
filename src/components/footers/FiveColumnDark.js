@@ -48,12 +48,11 @@ export default () => {
           <CompanyColumn>
             <LogoContainer>
               <LogoImg src={LogoImage} />
-              <LogoText>Treact Inc.</LogoText>
+              <LogoText>NETZEROFY </LogoText>
             </LogoContainer>
             <CompanyAddress>
-              123 Road, New Startup Building
-              Carter Road, San Francisco
-              California 40234
+              IIT Kanpur
+              UP 208016
             </CompanyAddress>
             <SocialLinksContainer>
               <SocialLink href="https://facebook.com">
@@ -71,20 +70,20 @@ export default () => {
             <ColumnHeading>Quick Links</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Blog</Link>
+                <Link href="/aboutus">About Us</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">FAQs</Link>
+                <Link href="/pricing">Pricing</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Support</Link>
+                <Link href="/">Blogs</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">About Us</Link>
+                <Link href="/contactus">Contact Us</Link>
               </LinkListItem>
             </LinkList>
           </Column>
-          <Column>
+          {/* <Column>
             <ColumnHeading>Product</ColumnHeading>
             <LinkList>
               <LinkListItem>
@@ -100,12 +99,12 @@ export default () => {
                 <Link href="#">Team</Link>
               </LinkListItem>
             </LinkList>
-          </Column>
+          </Column> */}
           <Column>
             <ColumnHeading>Legal</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">GDPR</Link>
+                <Link href="#"></Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">Privacy Policy</Link>
@@ -114,7 +113,7 @@ export default () => {
                 <Link href="#">Terms of Service</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Disclaimer</Link>
+                <Link href="#"></Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -125,21 +124,21 @@ export default () => {
                 +1 (234) (567)-8901
               </LinkListItem>
               <LinkListItem>
-                <Link href="mailto:support@servana.com">support@servana.com</Link>
+                <Link href="mailto:support@servana.com">support@netzerofy.com</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Sales</Link>
+                <Link href="#"></Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Report Abuse</Link>
+                <Link href="#"></Link>
               </LinkListItem>
             </LinkList>
           </Column>
         </FiveColumns>
         <Divider/>
         <CopyrightAndCompanyInfoRow>
-          <CopyrightNotice>&copy; Copyright 2020, Treact Inc.</CopyrightNotice>
-          <CompanyInfo>An Internet Company.</CompanyInfo>
+          <CopyrightNotice>&copy; Copyright 2022, NETZEROFY</CopyrightNotice>
+          <CompanyInfo></CompanyInfo>
         </CopyrightAndCompanyInfoRow>
       </Content>
     </Container>

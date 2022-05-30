@@ -23,7 +23,7 @@ const CardImage = styled.div`
 const CardContent = styled.div`
   ${tw`flex flex-col items-center mt-6`}
   .position {
-    ${tw`uppercase font-bold tracking-widest text-xs text-primary-500`}
+    ${tw`uppercase font-bold tracking-widest text-xs text-changed-100`}
   }
   .name {
     ${tw`mt-1 text-xl font-medium text-gray-900`}
@@ -33,7 +33,7 @@ const CardContent = styled.div`
 const CardLinks = styled.div`
   ${tw`mt-6 flex`}
   .link {
-    ${tw`mr-8 last:mr-0 text-gray-400 hocus:text-primary-500 transition duration-300`}
+    ${tw`mr-8 last:mr-0 text-gray-400 hocus:text-changed-100 transition duration-300`}
     .icon {
       ${tw`fill-current w-6 h-6`}
     }
@@ -52,16 +52,8 @@ export default ({
       name: "Himali Turn",
       links: [
         {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
           url: "https://linkedin.com",
           icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
         },
       ],
     },
@@ -71,17 +63,9 @@ export default ({
       name: "Troye Sivan",
       links: [
         {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
           url: "https://linkedin.com",
           icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
+        }
       ],
     },
     {
@@ -89,18 +73,11 @@ export default ({
       position: "Quality Assurance",
       name: "Holo Wo",
       links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
+        
         {
           url: "https://linkedin.com",
           icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
+        }
       ],
     },
   ]

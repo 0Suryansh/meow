@@ -2,16 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
-import { css } from "styled-components/macro";
+// import { css } from "styled-components/macro";
 
 import Header from "../headers/light.js";
 
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
-import DesignIllustration from "../../images/design-illustration-2.svg";
 import CustomersLogoStripImage from "../../images/customers-logo-strip.png";
 
 const Container = tw.div`relative`;
-const TwoColumn = tw.div`flex flex-col lg:flex-row lg:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
+const TwoColumn = tw.div`flex flex-col lg:flex-row lg:items-center max-w-screen-xl mx-auto py-20 md:py-0`;
 const LeftColumn = tw.div`relative lg:w-5/12 text-center max-w-lg mx-auto lg:max-w-none lg:text-left`;
 const RightColumn = tw.div`relative mt-12 lg:mt-0 flex-1 flex flex-col justify-center lg:self-end`;
 
@@ -21,10 +20,10 @@ const Paragraph = tw.p`my-5 lg:my-8 text-base xl:text-lg`;
 const Actions = styled.div`
   ${tw`relative max-w-md text-center mx-auto lg:mx-0`}
   input {
-    ${tw`sm:pr-48 pl-8 py-4 sm:py-5 rounded-full border-2 w-full font-medium focus:outline-none transition duration-300  focus:border-primary-500 hover:border-gray-500`}
+    ${tw`sm:pr-48 pl-8 py-4 sm:py-5 rounded-full border-2 w-full font-medium focus:outline-none transition duration-300  focus:border-changed-100 hover:border-gray-500`}
   }
   button {
-    ${tw`w-full sm:absolute right-0 top-0 bottom-0 bg-primary-500 text-gray-100 font-bold mr-2 my-4 sm:my-2 rounded-full py-4 flex items-center justify-center sm:w-40 sm:leading-none focus:outline-none hover:bg-primary-900 transition duration-300`}
+    ${tw`w-full sm:absolute right-0 top-0 bottom-0 bg-changed-300 text-gray-100 font-bold mr-2 my-4 sm:my-2 rounded-full py-4 flex items-center justify-center sm:w-40 sm:leading-none focus:outline-none hover:bg-changed-100 transition duration-300`}
   }
 `;
 
@@ -53,7 +52,7 @@ export default ({ roundedHeaderButton }) => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-            If You can’t measure it, <span tw="text-primary-500">You can’t manage it!!.</span>
+            If You can’t measure it, <span tw="text-changed-100">You can’t manage it!!.</span>
             </Heading>
             <Paragraph>
             Measuring an organization's environmental performance may be time-consuming and expensive, and the findings are sometimes incorrect. We decided to do something about it. We enable companies to understand the big picture and improve their sustainability programmes by integrating best-in-class data, analytics, and expertise.
@@ -69,7 +68,7 @@ export default ({ roundedHeaderButton }) => {
           </LeftColumn>
           <RightColumn>
             <IllustrationContainer>
-              <img tw="min-w-0 w-full max-w-lg xl:max-w-3xl" src={DesignIllustration} alt="Design Illustration" />
+              <img tw="min-w-0 w-full max-w-lg xl:max-w-3xl" src="https://img.freepik.com/free-vector/save-planet-concept-with-people-taking-care-earth_23-2148522570.jpg?w=740&t=st=1653536296~exp=1653536896~hmac=4630eef54d5995bc1f4ee54ec0c2d97feb56712afe54bf93b7c06092acbecd67" alt="Design Illustration" />
             </IllustrationContainer>
           </RightColumn>
         </TwoColumn>

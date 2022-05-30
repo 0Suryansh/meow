@@ -64,12 +64,12 @@ export default ({
   heading = (
     <>
       Get a carbon report in one  
- <span tw="text-primary-500"> Click.</span>
+ <span tw="text-changed-100"> Click.</span>
     </>
   ),
   description = "An interactive dashboard is available for your staff, investors, and the general public.",
   primaryButtonText = "Learn More",
-  primaryButtonUrl = "https://timerse.com",
+  primaryButtonUrl = "",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,
@@ -109,7 +109,7 @@ export default ({
     <Container>
       <TwoColumn>
         <ImageColumn>
-          <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
+          <Image src="https://img.freepik.com/free-vector/site-stats-concept-illustration_114360-1434.jpg?t=st=1653536786~exp=1653537386~hmac=04362fdcf9c98fae65e93f1f69fa648efa4ab2e0118bb96bb8419d32cf96fba3&w=740" imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
           {showDecoratorBlob && <DecoratorBlob />}
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>

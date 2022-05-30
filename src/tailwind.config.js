@@ -26,6 +26,13 @@ module.exports = {
         700: '#5011cc',
         800: '#460fb3',
         900: '#3c0d99',
+        input:"#3DD598"
+      },
+      changed:{
+        100:"#3DD598",
+        200:"#oc1d37",
+        300:"#243E63",
+        400:"#EAFCFF"
       },
 
       secondary: {

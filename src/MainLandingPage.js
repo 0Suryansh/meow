@@ -22,7 +22,7 @@ export default () => {
           <Features3/>
           <Features4/>
           <Features2/>
-          <Cards/>
+          {/* <Cards/> */}
           <NewsLetter/>
           <Footer/>
         </Content2Xl>
