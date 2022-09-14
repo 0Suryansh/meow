@@ -84,7 +84,7 @@ export default ({
     <Container>
       <TwoColumn css={!imageInsideDiv && tw`md:items-center`}>
         <ImageColumn css={imageContainerCss}>
-          {imageInsideDiv ? <Image imageSrc="https://img.freepik.com/free-vector/save-planet-concept_23-2148540641.jpg?w=740&t=st=1653536712~exp=1653537312~hmac=1a64a4fa45beeeb5c687369e25483e59af6f931b6ea23cb8bf6be10cc7156b2a" css={imageCss} /> : <img src="https://img.freepik.com/free-vector/save-planet-concept_23-2148540641.jpg?w=740&t=st=1653536712~exp=1653537312~hmac=1a64a4fa45beeeb5c687369e25483e59af6f931b6ea23cb8bf6be10cc7156b2a" css={imageCss} alt="" />}
+          <Image imageSrc="https://i.ibb.co/2dDPBwY/Whats-App-Image-2022-05-17-at-05-30-08.jpg" css={imageCss} alt="" />
           {imageDecoratorBlob && <DecoratorBlob css={imageDecoratorBlobCss} />}
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
