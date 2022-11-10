@@ -121,10 +121,10 @@ export default () => {
             <ColumnHeading>Contact</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                +1 (234) (567)-8901
+                +91 (961) (657)-5120
               </LinkListItem>
               <LinkListItem>
-                <Link href="mailto:support@servana.com">support@netzerofy.com</Link>
+                <Link href="mailto:support@netzerofy.com">support@netzerofy.com</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#"></Link>
